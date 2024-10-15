@@ -69,7 +69,7 @@ jobs:
 
       # Build assets. This could vary for your setup.
       - name: Build assets
-        run: npm install && npm run build
+        run: yarn && yarn build
 
       # Start a basic Laravel server with no reloading
       - name: Run Laravel Server
