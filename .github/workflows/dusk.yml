@@ -55,6 +55,10 @@ jobs:
       - name: Generate key
         run: php artisan key:generate
 
+      # Run the Laravel application migrations
+      - name: Run migration
+        run: php artisan migrate
+
       # Install the Chrome binaries required for Dusk to run tests
       - name: Install Chrome binaries
         run: php artisan dusk:chrome-driver --detect
